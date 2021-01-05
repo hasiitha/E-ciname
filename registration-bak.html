@@ -1,0 +1,126 @@
+
+<!DOCTYPEhtml>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title> Registration Form</title>
+		<script src="js/registration.js" > </script>
+		
+		<style>
+		div {
+  font-size-adjust: 0.58;
+}
+
+		</style>
+	</head>
+	
+	<body>
+	<center>
+		<img src="images/logo 2.png" class="logo">
+		</center>
+
+		<ul class="menu">
+		
+			<li><a href="Home.html">HOME</a></li>
+			<li><a href="Movies.html">MOVIES</a></li>
+			<li><a href="theater.html">THEATERS</a></li>
+			<li><a href="tickets.html">BOOK TICKETS</a></li>
+			<li class="active"><a href="registration.html">REGISTER</a></li>
+			<li><a href="begin.html">LOG IN</a></li>
+			<li><a href="contactUs.html">CONTACT US</a></li>
+			<li><a href="userAcc.html">USER ACCOUNT</a></li>
+			
+		</ul>
+		<br/>
+		
+		<hr>
+		<br/><br/><br/>
+<center>
+		<div class="form-registration">
+		<center>	
+			<h1><b>Registration Form</b> </h1>
+		</center><br><br><br/>
+		<center>
+			<image src = "images/user.jpg" alt = "user" length ="200" width = "200" />
+		</center>
+		<hr/>
+		
+		<center>
+		<div class="styling">
+		<form method = "post" onsubmit="return checkpassword()" id = "frm1" action ="#">
+			First name :<br/>
+			<input type = "text" id = "fstame"  placeholder ="First Name" required><br>
+			Last name : <br/>
+			<input type = "text" id = "lstame" placeholder ="Last Name " required>
+			<br/> <br/>
+			Gender :<br/>
+			<input type = "radio" id = "male" name = "gender" > Male
+			<br/> 
+			<input type = "radio" id="female" name = "gender" >Female 
+			<br/>
+			<br/>
+			Date of Birth :<br>
+			<input type = "date" id = "birth">
+			<br><br/>
+			Email <br/>
+			<input type = "email" id = "eml" required  pattern ="[0-9a-z*&%@]{0,100}+@[a-z0-9]{0,100}+.[a-z]{0,100}" placeholder ="Hasitha@example.com" required>
+			<br><br>
+			Telephone Number :<br/>
+			<input type = "phone" id = "mobNumb" pattern = "[0-9]{10}" placeholder ="+94*********" required>
+			<br><br>
+			Password <br>
+			<input type = "password" id = "pwrd"  required >
+			<br><br/>
+			Re-enter Password <br>
+			<input type = "password" id = "cnfrm" required >
+			<br><br/>
+			<b>Accept privacy &  policy and terms </b>
+			<input type = "checkbox" id = "checkbx" onclick = "enableButton()">
+			<hr/>
+			<br/><br/>
+			<div class = "buttns">
+			<input type = "submit" value="Submit" id = "sbmt"  disabled>
+			<br><br>
+			<input type ="reset" value="Reset" id ="rest" >
+				<br/><br/>
+			</div>
+					
+			</center>
+			</div>
+
+		</form>
+</center>
+	</body>
+	<br/><br/><br/><br/>
+	
+	<footer>
+	<div class="footer_main">
+	<div class="footer_socialMedia">
+		<ul>
+			<li type="none"><a href="https://www.facebook.com/" target="blank"><img class="img" src="images/facebook.png"></a></li>
+			<li type="none"><a href="https://www.instagram.com/" target="blank"><img class="img" src="images/instagram.png"></a></li>
+			<li type="none"><a href="https://twitter.com/" target="blank"><img class="img" src="images/twitter.png"></a></li>
+		</ul>
+	</div>
+	
+	<div class="footer_menu">
+		<ul>
+			<li><a class="a1" href="contactUs.html">Contact Us</a></li>
+			<li><a class="a1" href="registration.html">Register</a></li>
+			<li><a class="a1" href="Home.html">Home</a></li>
+			<li><a class="a1" href="movies.html">Movies</a></li>
+			<li><a class="a1" href="theater.html">Theatres</a></li>
+			<li><a class="a1" href="tickets.html">Book Tickets</a></li>
+		</ul>
+		
+	</div>
+	</div>
+	<div class="footer_bottom">
+		<p>Design by: Group MLB_05.2_02</p> 
+		
+	</div>
+	
+	
+	</footer>
+
+</html>
